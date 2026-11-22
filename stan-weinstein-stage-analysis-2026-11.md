@@ -211,10 +211,10 @@ title: Stan Weinstein 訪問驗證 × 後市行動手冊（2026-11）
 
 **來源**
 
-- TraderLion YouTube：https://www.youtube.com/watch?v=PRRNI5SrUWY（2026-11-09 上架，74 分鐘；音頻用 yt-dlp 下載、mlx_whisper 本地轉錄）
+- 訪問原片：[TraderLion YouTube — Trading Lessons from 60+ Years in the Market](https://www.youtube.com/watch?v=PRRNI5SrUWY)（2026-11-09 上架，74 分鐘；音頻下載後本地轉錄逐字核對）
 - 日線價量：Nasdaq API（ETF/個股）、Yahoo Finance 同 CNBC（指數、VIX、10Y），截至 2026-11-20 收市
-- 新聞：CNBC（11/20 收市報導、11/23–27 週末前瞻）、AP、WSJ、Investopedia、The Guardian
-- 利率預期：Fisclear Fed Watch（CME 聯邦基金期貨，12/8–9 加息 93%）
+- 新聞（全部可點擊）：[CNBC 11/20 收市報導](https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html) ・ [CNBC 11/23–27 前瞻](https://www.cnbc.com/2026/11/20/stock-market-next-week-outlook-for-nov-23-27-2026.html) ・ [AP 指數總結](https://apnews.com/article/wall-street-stocks-dow-nasdaq-c10b797a17c2acf37924d834efebe135) ・ [WSJ 即時](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026) ・ [Investopedia](https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11202026-12266027) ・ [The Guardian](https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off)
+- 利率預期：[Fisclear Fed Watch](https://fisclear.com/fed-watch)（CME 聯邦基金期貨，12/8–9 加息 93%）
 
 **限制**
 
