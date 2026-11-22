@@ -25,4 +25,4 @@ title: 投資分享 · Stage Analysis 與市場觀察
 
 ---
 
-*Last updated: 2026-11-22*
+*Last updated: 2026-11-22 ・ [GitHub Repo](https://github.com/kiuckhuang/investment-sharing)*
