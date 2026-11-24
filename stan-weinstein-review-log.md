@@ -31,7 +31,7 @@ title: 覆盤與修訂記錄 — Stan Weinstein 報告
 
 ### 1. 反彈質量評分（10 項指標，3 好 7 淡）
 
-![三大指數反彈位置](assets/img/chart_review_indices.png)
+![三大指數反彈位置](assets/img/chart_review_indices.svg)
 
 *紫點 = 11/20 低位。三隻指數都係由 200 日線下方反彈，未有一隻能重返 200 日線之上。*
 
@@ -48,7 +48,7 @@ title: 覆盤與修訂記錄 — Stan Weinstein 報告
 | 9 | 美元 | UUP 29.78，52 週新高，RSI 75.1 | ❌ 收緊、壓新興市場 |
 | 10 | 利率 | 10Y 4.934%（11/20 為 4.95%），12/9 加息 90% | ❌ 估值逆風未除 |
 
-![廣度：21% → 33%](assets/img/chart_review_breadth.png)
+![廣度：21% → 33%](assets/img/chart_review_breadth.svg)
 
 *上圖：43 隻股票中高於 20 日線嘅比例；下圖：每日創 20 日新低嘅股票數。11/20 有 19/43 隻創 20 日新低（恐慌），11/23 降到 0，但廣度只返到 33%，未夠 60% 嘅推力門檻。*
 
@@ -82,7 +82,7 @@ title: 覆盤與修訂記錄 — Stan Weinstein 報告
 | 貴金屬 | GLD -32.9%（距高位）、SLV -63% | 反彈但仍崩 | GLD -10.9%、SLV -23.2% | 深度 Stage 4，避開 |
 | 金融 | XLF +2.0%、KRE +1.8% | 跟升 | XLF -0.4%、KRE -2.4% | 中性偏弱 |
 
-![11/23 板塊表現](assets/img/chart_review_sectors.png)
+![11/23 板塊表現](assets/img/chart_review_sectors.svg)
 
 *11/23 單日：半導體 +13.6~15.0% 領漲，能源同必需消費逆市下跌——典型「風險開」輪動，唔係全面復甦。*
 

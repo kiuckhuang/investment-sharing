@@ -103,7 +103,7 @@ title: Stan Weinstein 訪問驗證 × 後市行動手冊（2026-11）
 
 ### 4.3 板塊輪動（11/6 → 11/20）
 
-![訪問後各行業表現](assets/img/chart_sectors.png)
+![訪問後各行業表現](assets/img/chart_sectors.svg)
 
 - **抗跌**：必需消費 +0.4%、公用 -1.0%、能源 -1.8%、零售 -3.4%
 - **重災**：半導體 -13.8%、軟件 -7.3%、納指100 -7.3%、原材料 -6.9%、生物科技 -6.6%
@@ -121,7 +121,7 @@ title: Stan Weinstein 訪問驗證 × 後市行動手冊（2026-11）
 
 ## 5. Stage 分析：而家係邊個階段？
 
-![三大指數 Stage 4](assets/img/chart_indices.png)
+![三大指數 Stage 4](assets/img/chart_indices.svg)
 
 | 資產 | Stage | 理由 |
 |---|---|---|
