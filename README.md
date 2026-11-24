@@ -9,6 +9,7 @@
 | 檔案 | 說明 |
 |---|---|
 | [`stan-weinstein-stage-analysis-2026-11.md`](stan-weinstein-stage-analysis-2026-11.md) | **Stan Weinstein 訪問驗證 × 後市行動手冊（2026-11）**:逐字核對 2026-11-09 TraderLion 訪問；驗證 SPY 725 / RUT 2716 關鍵位；QQQ Stage 3→4；2026-11-20 爆邊後嘅行動建議；關鍵價位表、情境推演 |
+| [`stan-weinstein-review-log.md`](stan-weinstein-review-log.md) | **覆盤與修訂記錄**：按日期順序追加嘅覆盤 log（#1 = 2026-11-24），舊紀錄唔刪改 |
 | [`index.md`](index.md) | 網站首頁（報告導航 + 免責聲明） |
 | [`assets/img/`](assets/img) | 圖表（三大指數 Stage 4、板塊表現） |
 
