@@ -10,7 +10,7 @@ title: 投資分享 · Stage Analysis 與市場觀察
 
 | 日期 | 報告 | 內容 |
 |---|---|---|
-| <span class="nowrap">2026-11-22</span> | [**Stan Weinstein 訪問驗證 × 後市行動手冊**]({{ '/stan-weinstein-stage-analysis-2026-11.html' | relative_url }}) | 逐字核對 TraderLion 訪問（2026-11-09）；驗證 SPY **725**、RUT **2716** 兩個關鍵位；QQQ Stage 3→4 判斷；11/20 爆邊後嘅持倉、短線、中長線行動；關鍵價位表與情境推演 |
+| <span class="nowrap">2026-11-22</span> | [**Stan Weinstein 訪問驗證 × 後市行動手冊**]({{ '/stan-weinstein-stage-analysis-2026-11.html' | relative_url }}) | 逐字核對 TraderLion 訪問（2026-11-09）；驗證 SPY **725**、RUT **2716** 兩個關鍵位；QQQ Stage 3→4 判斷；11/20 爆邊後嘅持倉、短線、中長線行動；關鍵價位表與情境推演；**11/24 覆盤**：11/23 反彈目標區間全部命中 |
 
 ## 🧭 呢個站係咩
 
