@@ -3,3 +3,10 @@ _site/
 .jekyll-cache/
 .sass-cache/
 Gemfile.lock
+
+# 覆盤工具
+.venv/
+__pycache__/
+*.pyc
+tools/.cache/
+drafts/

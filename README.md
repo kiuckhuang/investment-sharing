@@ -1,23 +1,60 @@
-# 投資分享 · Stage Analysis 與市場觀察
+# investment-sharing
 
-> 🌐 **網頁版:<https://kiuckhuang.github.io/investment-sharing/>** ・ Repo:<https://github.com/kiuckhuang/investment-sharing>
+用 Stage Analysis（Stan Weinstein 四階段）同價量框架驗證市場觀點，並長期記錄「事前判斷 vs 事後結果」的廣東話網站。
 
-用 Stage Analysis（Stan Weinstein 四階段框架）同價量數據，驗證市場觀點同名人訪問，記錄「事前講咗咩、事後發生咩」。
+- 網站：<https://kiuckhuang.github.io/investment-sharing/>
+- 首頁：報告列表 + 免責聲明
+- `/method.html`：固定判讀門檻、覆盤結構、歷史政策
 
-## 📁 內容
+## 內容
 
-| 檔案 | 說明 |
+| 檔案 | 用途 |
 |---|---|
-| [`stan-weinstein-stage-analysis-2026-11.md`](stan-weinstein-stage-analysis-2026-11.md) | **Stan Weinstein 訪問驗證 × 後市行動手冊（2026-11）**:逐字核對 2026-11-09 TraderLion 訪問；驗證 SPY 725 / RUT 2716 關鍵位；QQQ Stage 3→4；2026-11-20 爆邊後嘅行動建議；關鍵價位表、情境推演 |
-| [`stan-weinstein-review-log.md`](stan-weinstein-review-log.md) | **覆盤與修訂記錄**：按日期順序追加嘅覆盤 log（#1 = 2026-11-24），舊紀錄唔刪改 |
-| [`index.md`](index.md) | 網站首頁（報告導航 + 免責聲明） |
-| [`assets/img/`](assets/img) | 圖表（三大指數 Stage 4、板塊表現） |
+| `stan-weinstein-stage-analysis-2026-11.md` | 原始驗證報告（凍結，不再改） |
+| `stan-weinstein-review-log.md` | 覆盤記錄（**只增不改**，新一節放最上面） |
+| `method.md` | 方法與流程（公開） |
+| `docs/PLAYBOOK.md` | 內部作業手冊（唔上站） |
 
-## 🛠 技術
+## 覆盤流程（一鍵）
 
-- GitHub Pages（Jekyll，`jekyll-theme-primer`），推送 `main` 自動 build。
-- 圖表用 Python（matplotlib）由日線價量數據生成。
+```bash
+./tools/setup.sh                 # 一次性：建 .venv + matplotlib
+.venv/bin/python tools/review.py # 抓數 → 計指標 → 存快照 → 畫圖 → 出草稿
+```
 
-## ⚠️ 免責聲明
+輸出：
 
-內容只供研究參考，**唔構成投資建議**；數據有時效，請以最新市場資料為準。
+- `data/YYYY-MM-DD.json` — 當日完整指標快照（永久保留，用嚟同上次 diff）
+- `assets/img/YYYY-MM-DD/{indices,breadth,sectors}.svg` — 三張圖（gzip 後 ~20KB）
+- `drafts/YYYY-MM-DD.md` — 填好數字的草稿，人手只補「判讀」同「結論」
+
+冇裝 matplotlib 都可以跑：`python3 tools/review.py --no-charts`。
+
+## 結構
+
+```
+tools/
+  marketdata.py   # 抓 Nasdaq 日線 + CNBC 報價（有 cache）
+  metrics.py      # 所有指標、Stage 分類、廣度、派貨日、FTD
+  charts.py       # matplotlib → SVG（字體保持 <text>，檔案細）
+  review.py       # CLI：串起上面三步 + 出草稿
+data/             # 每日快照（JSON，永久保留）
+docs/PLAYBOOK.md  # 規則同流程
+```
+
+## 自動化
+
+`.github/workflows/snapshot.yml` 每個交易日 22:10 UTC（美股收市後）自動跑一次，把 `data/` 同圖 commit 返 repo，所以就算本地冇開機，歷史都唔會斷。
+
+人手只需每週寫一次覆盤：跑 script、補判讀、push。
+
+## 要求
+
+- Python 3.12+（用到 f-string 內嵌引號）
+- 可選：matplotlib（畫圖）
+
+## 注意
+
+- 唔會上載訪問逐字稿（版權）。
+- 冇任何個人資料：冇 email、電話、本機路徑。
+- 所有內容**唔構成投資建議**。

@@ -12,12 +12,14 @@ title: 投資分享 · Stage Analysis 與市場觀察
 |---|---|---|
 | <span class="nowrap">2026-11-22</span> | [**Stan Weinstein 訪問驗證 × 後市行動手冊**]({{ '/stan-weinstein-stage-analysis-2026-11.html' | relative_url }}) | 逐字核對 TraderLion 訪問（2026-11-09）；驗證 SPY **725**、RUT **2716** 兩個關鍵位；QQQ Stage 3→4 判斷；11/20 爆邊後嘅持倉、短線、中長線行動；關鍵價位表與情境推演 |
 | <span class="nowrap">2026-11-24</span> | [**覆盤與修訂記錄 🔄**]({{ '/stan-weinstein-review-log.html' | relative_url }}) | 按日期記錄「當時點講、後來點樣」。**覆盤 #1（11/24 v2）**：反彈命中 725／645–660 但屬消息+空回補、指數 gap 即日補、分布日 9 個、信貸/美元唔配合 → 熊市反彈，減倉窗口已開 |
+| <span class="nowrap">2026-11-24</span> | [**方法與流程 🧪**]({{ '/method.html' | relative_url }}) | 固定嘅判讀門檻（Stage／派貨日／FTD／廣度）、覆盤九節結構、數據來源、歷史政策「只增不改」——點解隔幾個月都比較得到 |
 
 ## 🧭 呢個站係咩
 
 - 每次市場觀點、名人訪問、交易框架，都用**可量化嘅價量數據**驗證，記錄判斷同結果。
 - 所有報告列明**數據截止日、價格、計算方法**，方便自己翻查，亦歡迎朋友指正。
 - 內容以**香港廣東話**書寫，偏向實戰同風險管理，唔會講「必升必跌」。
+- 判讀門檻同覆盤格式寫喺[方法與流程]({{ '/method.html' | relative_url }})，唔會每次改，所以舊判斷同新判斷可以直接比較。
 - 不定期更新。
 
 ## ⚠️ 免責聲明
@@ -26,4 +28,4 @@ title: 投資分享 · Stage Analysis 與市場觀察
 
 ---
 
-*Last updated: 2026-11-22 ・ [GitHub Repo](https://github.com/kiuckhuang/investment-sharing)*
+*Last updated: 2026-11-24 ・ [GitHub Repo](https://github.com/kiuckhuang/investment-sharing)*

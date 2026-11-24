@@ -2,6 +2,15 @@ title: 投資分享 · Stage Analysis 與市場觀察
 description: 用 Stage Analysis 同價量框架驗證市場觀點,記錄可覆核嘅判斷(2026)
 theme: jekyll-theme-primer
 markdown: kramdown
+
+# 工具、原始數據、草稿唔需要上站，避免 build 出多餘檔案
+exclude:
+  - tools/
+  - data/
+  - drafts/
+  - docs/
+  - .venv/
+
 defaults:
   - scope:
       path: ""

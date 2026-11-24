@@ -1,0 +1,40 @@
+name: daily-snapshot
+
+# 每個交易日美股收市後自動抓數、計指標、存快照（data/）。
+# 咁就算冇開電腦，歷史都唔會斷。
+on:
+  schedule:
+    # 22:10 UTC = 美東收市後（EST 17:10 / EDT 18:10），週二至週六香港早上
+    - cron: "10 22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install matplotlib
+        run: pip install --quiet matplotlib
+      - name: Build snapshot
+        run: python tools/review.py || python tools/review.py --no-charts
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data assets/img || true
+          if git diff --cached --quiet; then
+            echo "冇新數據，跳過 commit"
+          else
+            git commit -m "snapshot $(date -u +%Y-%m-%d)"
+            git push
+          fi
