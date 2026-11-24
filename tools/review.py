@@ -51,6 +51,21 @@ def table(headers, rows):
     return "\n".join(out)
 
 
+def same_core(path, snap):
+    """同舊快照比較（忽略 generated 同即時報價），一樣就唔重寫，免得每日多一個 commit。"""
+    if not os.path.exists(path):
+        return False
+    try:
+        with open(path, encoding="utf-8") as fh:
+            old = json.load(fh)
+    except Exception:  # noqa: BLE001
+        return False
+    skip = {"generated", "quotes"}
+    a = {k: v for k, v in old.items() if k not in skip}
+    b = {k: v for k, v in snap.items() if k not in skip}
+    return a == b
+
+
 def load_previous(asof):
     files = sorted(glob.glob(os.path.join(DATA_DIR, "*.json")))
     prev = None
@@ -266,9 +281,12 @@ def main():
     os.makedirs(DATA_DIR, exist_ok=True)
     snap_name = snap["asof"]
     snap_path = os.path.join(DATA_DIR, snap_name + ".json")
-    with open(snap_path, "w", encoding="utf-8") as fh:
-        json.dump(snap, fh, ensure_ascii=False, indent=1)
-    print("   快照 → " + os.path.relpath(snap_path, ROOT))
+    if not same_core(snap_path, snap):
+        with open(snap_path, "w", encoding="utf-8") as fh:
+            json.dump(snap, fh, ensure_ascii=False, indent=1)
+        print("   快照 → " + os.path.relpath(snap_path, ROOT))
+    else:
+        print("   快照無變化，沿用 " + os.path.relpath(snap_path, ROOT))
 
     prev = load_previous(snap_name)
 
