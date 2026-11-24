@@ -11,7 +11,7 @@ title: 投資分享 · Stage Analysis 與市場觀察
 | 日期 | 報告 | 內容 |
 |---|---|---|
 | <span class="nowrap">2026-11-22</span> | [**Stan Weinstein 訪問驗證 × 後市行動手冊**]({{ '/stan-weinstein-stage-analysis-2026-11.html' | relative_url }}) | 逐字核對 TraderLion 訪問（2026-11-09）；驗證 SPY **725**、RUT **2716** 兩個關鍵位；QQQ Stage 3→4 判斷；11/20 爆邊後嘅持倉、短線、中長線行動；關鍵價位表與情境推演 |
-| <span class="nowrap">2026-11-24</span> | [**覆盤與修訂記錄 🔄**]({{ '/stan-weinstein-review-log.html' | relative_url }}) | 持續追加嘅覆盤 log：每次按日期記錄「當時點講、後來點樣」，舊紀錄唔刪改。**覆盤 #1（11/24）**：11/23 反彈，SPY/QQQ 啱啱停喺原報告預測區間 |
+| <span class="nowrap">2026-11-24</span> | [**覆盤與修訂記錄 🔄**]({{ '/stan-weinstein-review-log.html' | relative_url }}) | 按日期記錄「當時點講、後來點樣」。**覆盤 #1（11/24 v2）**：反彈命中 725／645–660 但屬消息+空回補、指數 gap 即日補、分布日 9 個、信貸/美元唔配合 → 熊市反彈，減倉窗口已開 |
 
 ## 🧭 呢個站係咩
 
