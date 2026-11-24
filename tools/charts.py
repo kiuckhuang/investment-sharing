@@ -43,6 +43,7 @@ def setup_fonts():
                 continue
     plt.rcParams["axes.unicode_minus"] = False
     plt.rcParams["svg.fonttype"] = "none"   # 文字保持 <text>，SVG 細 10 倍以上
+    plt.rcParams["svg.hashsalt"] = "stage-analysis"  # 固定 id，數據無變就 byte-identical
     plt.rcParams["path.simplify"] = True
     plt.rcParams["path.simplify_threshold"] = 0.4
 
@@ -97,7 +98,7 @@ def chart_indices(history, snap, path, months=3):
         _dates_axis(ax)
     fig.suptitle(f"{snap["asof"]}　三大指數：反彈之後仲未收復 200 日線", fontsize=13.5)
     fig.tight_layout(rect=[0, 0, 1, 0.97])
-    fig.savefig(path)
+    fig.savefig(path, metadata={"Date": None})
     plt.close(fig)
 
 
@@ -137,7 +138,7 @@ def chart_breadth(snap, path):
                 xytext=(-70, 8), textcoords="offset points", fontsize=8, color=PURPLE)
     _dates_axis(a2, 7)
     fig.tight_layout()
-    fig.savefig(path)
+    fig.savefig(path, metadata={"Date": None})
     plt.close(fig)
 
 
@@ -161,7 +162,7 @@ def chart_sectors(snap, path, names=None):
     ax.set_title(f"{snap["asof"]}　板塊單日表現（紅跌綠升）", fontsize=12.5, loc="left")
     ax.grid(axis="x", alpha=0.25)
     fig.tight_layout()
-    fig.savefig(path)
+    fig.savefig(path, metadata={"Date": None})
     plt.close(fig)
 
 
