@@ -1,7 +1,7 @@
 name: daily-snapshot
 
 # 每個交易日美股收市後自動抓數、計指標、存快照（data/）。
-# 咁就算冇開電腦，歷史都唔會斷。
+# 咁就算冇開電腦，歷史都唔會斷。人手只需要每週寫一次覆盤。
 on:
   schedule:
     # 22:10 UTC = 美東收市後（EST 17:10 / EDT 18:10），週二至週六香港早上
@@ -25,8 +25,8 @@ jobs:
           python-version: "3.12"
       - name: Install matplotlib
         run: pip install --quiet matplotlib
-      - name: Build snapshot
-        run: python tools/review.py || python tools/review.py --no-charts
+      - name: Build snapshot (make review)
+        run: make review
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"

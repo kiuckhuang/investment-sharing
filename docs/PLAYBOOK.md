@@ -22,15 +22,18 @@
 
 ```bash
 # ① 抓數 + 計指標 + 畫圖 + 出草稿（一次過）
-python3 tools/review.py
+make review
 
 # ② 睇草稿，補判讀
-open drafts/2026-11-24.md
+make show
 
 # ③ 貼入覆盤記錄（新增一節，唔改舊節）
 # ④ 發佈
-git add -A && git commit -m "review 2026-11-24" && git push
+make publish MSG="review 2026-11-24"
 ```
+
+其他常用：`make status`（最新快照摘要）、`make check`（檢查快照／連結／個人資料）、
+`make test`（離線自測）、`make data`（列出快照）。
 
 程式會自動做嘅事：
 
@@ -93,7 +96,7 @@ git add -A && git commit -m "review 2026-11-24" && git push
 腳本會用 cache 舊數據並印 `FAIL`。見到 FAIL 就唔好出報告，等下一次或者手動檢查。
 
 **Q：冇裝 matplotlib？**
-`python3 tools/review.py --no-charts`，圖遲啲再補。
+跑 `make snapshot`（只存數據唔畫圖），或者 `make setup` 裝好再畫。
 
 **Q：想加新指標？**
 加喺 `tools/metrics.py`，同時更新本文第 4 節嘅門檻表，並喺下一次覆盤註明「新增指標」。

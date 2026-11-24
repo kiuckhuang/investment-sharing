@@ -110,12 +110,25 @@ def _write_cache(sym, rows):
     os.replace(tmp, _cache_path(sym))
 
 
+def expected_session():
+    """美股最近一個應該有收市數據嘅交易日（用 ET 時間粗略判斷）。"""
+    now = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=5)
+    day = now.date()
+    while day.weekday() >= 5:
+        day -= dt.timedelta(days=1)
+    if now.hour < 16 or (now.hour == 16 and now.minute < 20):
+        day -= dt.timedelta(days=1)
+        while day.weekday() >= 5:
+            day -= dt.timedelta(days=1)
+    return day.isoformat()
+
+
 def fetch_history(sym, not_before=None, span_days=760, pause=0.9, verbose=True):
     """取 ~2 年日線。cache 已經去到 not_before 或之後就唔重複抓。"""
-    if not_before:
-        rows = _read_cache(sym, not_before)
-        if rows:
-            return rows
+    not_before = not_before or expected_session()
+    rows = _read_cache(sym, not_before)
+    if rows:
+        return rows
     end = dt.date.today()
     start = end - dt.timedelta(days=span_days)
     klass = "etf" if sym in ETF else "stocks"

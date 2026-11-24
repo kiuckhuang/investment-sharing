@@ -265,7 +265,18 @@ def main():
     ap.add_argument("--no-charts", action="store_true")
     ap.add_argument("--offline", action="store_true", help="只用 cache，唔上網")
     ap.add_argument("--quiet", action="store_true")
+    ap.add_argument("--status", action="store_true", help="只印最新快照摘要")
     args = ap.parse_args()
+
+    if args.status:
+        files = sorted(glob.glob(os.path.join(DATA_DIR, "*.json")))
+        if not files:
+            print("data/ 未有快照，先跑 make review")
+            return
+        with open(files[-1], encoding="utf-8") as fh:
+            print(metrics.summarise(json.load(fh)))
+        print("\n快照：" + os.path.relpath(files[-1], ROOT))
+        return
 
     print("① 抓取數據…")
     if args.offline:
@@ -311,7 +322,7 @@ def main():
     print("下一步：")
     print("  1) 睇 drafts/%s.md，補「判讀」同「結論」" % snap_name)
     print("  2) 貼入 stan-weinstein-review-log.md（新增一節，唔改舊節）")
-    print("  3) git add -A && git commit -m review-%s && git push" % snap_name)
+    print("  3) make publish MSG=\"review %s\"" % snap_name)
 
 
 if __name__ == "__main__":
