@@ -11,7 +11,7 @@ title: 投資分享 · Stage Analysis 與市場觀察
 | 日期 | 報告 | 內容 |
 |---|---|---|
 | <span class="nowrap">2026-11-22</span> | [**Stan Weinstein 訪問驗證 × 後市行動手冊**]({{ '/stan-weinstein-stage-analysis-2026-11.html' | relative_url }}) | 逐字核對 TraderLion 訪問（2026-11-09）；驗證 SPY **725**、RUT **2716** 兩個關鍵位；QQQ Stage 3→4 判斷；11/20 爆邊後嘅持倉、短線、中長線行動；關鍵價位表與情境推演 |
-| <span class="nowrap">2026-11-24</span> | [**覆盤與修訂記錄 🔄**]({{ '/stan-weinstein-review-log.html' | relative_url }}) | 按日期記錄「當時點講、後來點樣」。**覆盤 #1（11/24 v2）**：反彈命中 725／645–660 但屬消息+空回補、指數 gap 即日補、分布日 9 個、信貸/美元唔配合 → 熊市反彈，減倉窗口已開 |
+| <span class="nowrap">2026-11-25</span> | [**覆盤與修訂記錄 🔄**]({{ '/stan-weinstein-review-log.html' | relative_url }}) | 按日期記錄「當時點講、後來點樣」。**覆盤 #2（11/25）**：反彈一日完結但屬「換馬」——SOXX −8.27%、大型科技入 Stage 4，資金轉去醫療／生科；廣度 33% 未動、FTD 第 3 日未合資格。**覆盤 #1（11/24）**：11/23 反彈屬消息+空回補，減倉窗口已開 |
 | <span class="nowrap">2026-11-24</span> | [**方法與流程 🧪**]({{ '/method.html' | relative_url }}) | 固定嘅判讀門檻（Stage／派貨日／FTD／廣度）、覆盤九節結構、數據來源、歷史政策「只增不改」——點解隔幾個月都比較得到 |
 
 ## 🧭 呢個站係咩
@@ -28,4 +28,4 @@ title: 投資分享 · Stage Analysis 與市場觀察
 
 ---
 
-*Last updated: 2026-11-24 ・ [GitHub Repo](https://github.com/kiuckhuang/investment-sharing)*
+*Last updated: 2026-11-25 ・ [GitHub Repo](https://github.com/kiuckhuang/investment-sharing)*
